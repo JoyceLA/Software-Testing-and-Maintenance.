@@ -5,15 +5,15 @@
 	>>> mostrar_score()
 	'[0-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[15-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[30-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[40-0]'
 	>>> anotar(1,0)
@@ -53,25 +53,35 @@ def anotar(play1, play2):
 	elif play2 == 1: #Anoto el jugador 2
 		player2 += puntos2
 		vuelta2 += 1
-	
-	
-	if player1 == player2:
-		print 'deuse'
-	elif player1 > player2:
-		print "[advantage-"+str(player2)+"]"
-	elif player1 < player2:
-		print "["+str(player1)+"-advantage]"
-	if player1 >= 40:
-		extra1 += 1
-		extra2 = 0
-	if player2 >= 40:
-		extra2 += 1
-		extra1 = 0
+	info = ""
+	if player1 >= 40 or player2 >= 40:
+		if player1 == player2:
+			info= "deuse"
+		elif player1 > player2:
+			info=  "[advantage-"+str(player2)+"]"
+		elif player1 < player2:
+			info=  "["+str(player1)+"-advantage]"
+		if player1 >= 40:
+			extra1 += 1
+			extra2 = 0
+		if player2 >= 40:
+			extra2 += 1
+			extra1 = 0
 	#VALIDAR SI GANO DOS VECES SEGUIDAS
 	if extra1 == 2:
-		print "[set-"+str(player2)+"]"
+		info=  "[set-"+str(player2)+"]"
 	elif extra2 == 2:
-		print "["+str(player1)+"-set]"
+		info=  "["+str(player1)+"-set]"
+
+	print info
+
+
+	
+	
+	
+	
+	
+		
 
 
 	
