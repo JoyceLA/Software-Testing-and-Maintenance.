@@ -1,0 +1,29 @@
+"""
+	SIMULANDO UN JUEGO DE TENNIS
+	>>> mostrar_score()
+	'[0-0]'
+	>>> anotar(1,0)
+	'[advantage-0]'
+	>>> mostrar_score()
+	'[15-0]'
+	>>> anotar(0,1)
+	'deuse'
+	>>> mostrar_score()
+	'[15-15]'
+	>>> anotar(1,0)
+	'[advantage-15]'
+	>>> mostrar_score()
+	'[30-15]'
+	>>> anotar(0,1)
+	'deuse'
+	>>> mostrar_score()
+	'[30-30]'
+	>>> anotar(1,0)
+	'deuse'
+	>>> mostrar_score()
+	'[40-30]'
+	>>> anotar(0,1)
+	'deuse'
+	>>> mostrar_score()
+	'[40-40]'
+"""
