@@ -3,21 +3,17 @@
 	>>> mostrar_score()
 	'[0-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[15-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[30-0]'
 	>>> anotar(1,0)
-	'[advantage-0]'
+	''
 	>>> mostrar_score()
 	'[40-0]'
-	>>> anotar(1,0)
-	'deuse'
-	>>> mostrar_score()
-	'[30-30]'
 	>>> anotar(1,0)
 	'[set-0]'
 	>>> mostrar_score()
