@@ -26,4 +26,12 @@
 	'deuse'
 	>>> mostrar_score()
 	'[40-40]'
+	>>> anotar(1,0)
+	'[advantage-40]'
+	>>> mostrar_score()
+	'[50-40]'
+	>>> anotar(1,0)
+	'[set-40]'
+	>>> mostrar_score()
+	'[60-40]'
 """
